@@ -1,4 +1,4 @@
-
+"""
 a=0
 b=1
 n=4
@@ -9,3 +9,15 @@ for i in range(0,n):
     a=b
     b=sum
     print(b, end=' ')
+"""
+
+a=0
+b=1
+n=4
+sum=0
+
+for i in range(0,n):
+    print(a, end=' ')
+    sum=a+b
+    a=b
+    b=sum

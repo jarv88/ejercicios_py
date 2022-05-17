@@ -1,0 +1,21 @@
+lista = [1,3,5,4,7,8,9,3,4,7,5,2,8,3,1,2,2]
+
+new_list =[]
+
+for i in range(len(lista)):
+    if lista[i] not in new_list:
+        new_list.append(lista[i])
+
+print(new_list)
+
+
+#otro forma con set
+
+lista2 = [1,3,5,4,7,8,9,3,4,7,5,2,8,3,1,2,2]
+
+new_list2 = set()
+
+for i in range(len(lista2)):
+    new_list2.add(lista2[i])
+
+print(new_list2)

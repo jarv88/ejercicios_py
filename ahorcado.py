@@ -4,7 +4,7 @@ class Ahorcado:
     def __init__(self):
         
         palabras = "hamburguesa pizza camioneta motocicleta supermercado caballo perro televisor computadora laptop cumpleaños fiesta pasapalos cerveza colchon".split()
-        self.palabra = palabras[random.randint(0, len(palabras)-1)]
+        self.palabra = palabras[random.randint(0, len(palabras)-1)] #se puede usar random.choice(palabras) tambien
         self.palabra_= "_" * len(self.palabra)
         self.palabra=list(self.palabra)
         self.palabra_=list(self.palabra_)
@@ -41,9 +41,10 @@ class Ahorcado:
 
 
 
+if __name__ == '__main__':
 
-new=Ahorcado()
-new.jugar()
+    new=Ahorcado()
+    new.jugar()
 # while True:
 #     intento=input("Ingrese letra: ")
 #     new.intento(intento)
